@@ -1,6 +1,18 @@
+  <style>
+    @media print
+{    
+    .no-print *
+    {
+        display: none !important;
+    }
+}
+  </style>
+
+<div class="row no-print">
 <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;" id="print_Button onclick="printDiv()" >
     <i class="fas fa-download"></i> Generate PDF
 </button>
+</div>
 
 <script type="text/javascript">
   function printDiv() {
